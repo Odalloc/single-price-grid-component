@@ -1,0 +1,110 @@
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --light-cyan: #00bcc0;
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+  --white: #fffff7;
+  --ff-karla: "Karla", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  font-family: var(--ff-karla);
+  background-color: var(--light-gray);
+}
+
+p,
+ul {
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+.wrapper {
+  max-width: 800px;
+  box-shadow: 0 8px 24px rgba(149, 157, 165, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 2em;
+}
+
+header {
+  padding: 2em;
+  background-color: var(--white);
+}
+
+header h1 {
+  color: var(--cyan);
+  font-size: clamp(1.3rem, 2.5vw, 1.5rem);
+}
+
+.text-guarantee {
+  color: var(--bright-yellow);
+  font-weight: 700;
+  margin-block: 0.8em;
+  font-size: clamp(1rem, 2vw, 1.1rem);
+}
+
+header p {
+  color: var(--grayish-blue);
+}
+
+.content-split {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.content-split div {
+  padding: 2em;
+  background-color: var(--cyan);
+}
+
+.content-why-us {
+  opacity: 0.8;
+}
+
+.content-split h2 {
+  margin-bottom: 0.8em;
+  color: var(--white);
+  font-size: clamp(1.1rem, 2.3vw, 1.3rem);
+}
+
+.content-split p,
+.content-split ul {
+  color: var(--light-gray);
+}
+
+.text-amount {
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.content-subscription button {
+  background-color: var(--bright-yellow);
+  width: 100%;
+  padding: 1em;
+  margin-top: 1.5em;
+  border-radius: 5px;
+  color: var(--white);
+  border: none;
+  outline: none;
+  font-size: 1em;
+  box-shadow: 0 5px 15px rgba(37, 37, 37, 0.35);
+  cursor: pointer;
+}
