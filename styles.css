@@ -36,7 +36,7 @@ button {
 }
 
 .wrapper {
-  max-width: 800px;
+  max-width: 700px;
   box-shadow: 0 8px 24px rgba(149, 157, 165, 0.2);
   border-radius: 10px;
   overflow: hidden;
@@ -107,4 +107,11 @@ header p {
   font-size: 1em;
   box-shadow: 0 5px 15px rgba(37, 37, 37, 0.35);
   cursor: pointer;
+}
+
+@media (min-width: 770px) {
+  header,
+  .content-split div {
+    padding: 3em;
+  }
 }
